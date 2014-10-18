@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath="$PWD/moogit" wsgi:application
