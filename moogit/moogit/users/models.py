@@ -14,24 +14,3 @@ class User(AbstractUser):
     def __unicode__(self):
         return self.username
 
-class Venue(models.Model):
-	AREA_CHOICES = (
-		("NC", "North County"),
-		("EC", "East County"),
-		("CC", "Central"),
-		("SB", "South Boy")	
-	)
-
-
-	venueID = models.AutoField(primary_key = True)
-	venueName = models.CharField(max_length = 75)
-	description = models.TextField()
-	area = models.CharField(choices =  AREA_CHOICES,
-							max_length = 20)
-	Neighborhood = models.CharField(max_length = 75)
-	dateAdded = models.DateTimeField(auto_now_add = True)
-	lastSaved = models.DateTimeField(auto_now = True)
-	streetAddress = models.CharField(max_length = 150)
-	city = models.CharField(max_length = 150)
-	state = USPhoneNumberField()
-	

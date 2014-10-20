@@ -42,11 +42,13 @@ class Common(Configuration):
         'allauth',  # registration
         'allauth.account',  # registration
         'allauth.socialaccount',  # registration
+        'localflavor', #for phone, zip, state etc
     )
 
     # Apps specific for this project go here.
     LOCAL_APPS = (
-        'users',  # custom users app
+        'users',
+        'displayShow'  # custom users app
         # Your stuff: custom apps go here
     )
 
