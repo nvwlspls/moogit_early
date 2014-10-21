@@ -1,1 +1,71 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+
+<div class = "row">  
+	<div class = "col-md-5"><h1>Welcome To Moogit</h1></div> 
+	<div class = "col-md-2"><h4>a place for shows<h4></div>
+</div>
+
+
+<br><br>
+<div class = "jumbotron">
+<div class = "row">
+    <div class = "col-md-4">
+		<button type="button" class="btn btn-primary btn-lg">Sort by Date</button>
+	</div>
+
+    <div class = "col-md-4">
+		<button type="button" class="btn btn-primary btn-lg">Sort by Area</button>
+	</div>
+
+	<div class = "col-md-4">
+		<button type="button" class="btn btn-primary btn-lg">Sort by Genre</button>
+	</div>
+</div>
+<br>
+<div class="table">
+  <table class="table">
+  	<thead>
+		<tr>
+	    	<th>Show</th>
+	    	<th>Band</th>
+	    	<th>Venue</th>
+	    	<th>Date</th>
+	    	<th>Time</th>
+	    	<th>Genre</th>
+	    	<th>Age</th>
+    	</tr>
+    </thead>
+    <tr>
+    	<td>Apples</td>
+    	<td>Oranges</td>
+    	<td>Triple Crown</td>
+    	<td>12-Oct-2014</td>
+    	<td>08:30</td>
+    	<td>Fruit</td>
+    	<td>21+</td>
+    </tr>    
+
+
+
+     </table>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+{% endblock %}
