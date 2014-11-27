@@ -38,6 +38,10 @@ class Venue(models.Model):
     conEmail = models.EmailField(max_length = 100,
                                 default = "email@email.com")
 
+    def __unicode__(self):
+       return unicode(self.venueNae)  
+
+
 class Band(models.Model):
     bandID = models.AutoField(primary_key = True)
     bandName = models.CharField(max_length = 200,
@@ -49,6 +53,10 @@ class Band(models.Model):
     genre = models.CharField(max_length = 75 )
     bandDateAdded = models.DateTimeField(auto_now_add = True)
     bandDateMod = models.DateTimeField(auto_now = True)
+    
+    def __unicode__(self):
+       return unicode(self.bandName)  
+
 
 class Show(models.Model):
     showID = models.AutoField(primary_key = True)
@@ -66,3 +74,6 @@ class Show(models.Model):
     bandsExtra = models.TextField()
     showDateAdded = models.DateTimeField( auto_now_add = True)
     showDateMod = models.DateTimeField( auto_now = True )
+
+    def __unicode__(self):
+       return unicode(self.showID)  

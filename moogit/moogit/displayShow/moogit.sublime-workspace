@@ -4,16 +4,36 @@
 		"selected_items":
 		[
 			[
+				"venue",
+				"venueName"
+			],
+			[
+				"dose",
+				"doseLevel"
+			],
+			[
+				"uni",
+				"uniqueDoseLevels"
+			],
+			[
+				"aut",
+				"auto_now_add"
+			],
+			[
+				"US",
+				"USStateSelect"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
 				"Mo",
 				"model"
 			],
 			[
 				"model",
 				"models"
-			],
-			[
-				"aut",
-				"auto_now_add"
 			],
 			[
 				"r",
@@ -307,33 +327,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/users/models.py",
-			"settings":
-			{
-				"buffer_size": 350,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/config/common.py",
-			"settings":
-			{
-				"buffer_size": 8901,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "from django.db import models\n\nfrom localflavor.us.forms import USPhoneNumberField, USStateSelect,\n									USZipCodeField\n\n\n\n# Create your models here.\nclass Venue(models.Model):\n	AREA_CHOICES = (\n		(\"NC\", \"North County\"),\n		(\"EC\", \"East County\"),\n		(\"CC\", \"Central\"),\n		(\"SB\", \"South Boy\")	\n	)\n\n\n	venueID = models.AutoField(primary_key = True)\n	venueName = models.CharField(max_length = 75)\n	description = models.TextField()\n	area = models.CharField(choices =  AREA_CHOICES,\n							max_length = 20)\n	Neighborhood = models.CharField(max_length = 75)\n	dateAdded = models.DateTimeField(auto_now_add = True)\n	lastSaved = models.DateTimeField(auto_now = True)\n	streetAddress = models.CharField(max_length = 150)\n	city = models.CharField(max_length = 150)\n	state = USStateSelect()\n	zipCode = USZipCodeField()\n	phone = USPhoneNumberField()\n	conFirstName = models.CharField(max_length = 100,\n									)",
-			"file": "models.py",
-			"file_size": 835,
-			"file_write_time": 1413742588000000,
-			"settings":
-			{
-				"buffer_size": 895,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -367,6 +360,16 @@
 	},
 	"file_history":
 	[
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/admin.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/urls.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/users/functions.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/views.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/models.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/urls.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/templates/pages/home.html",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/config/common.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/migrations/urls.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/users/models.py",
 		"/Users/waynejessen/Desktop/cookiecutter-django-1.6.6/README.rst",
 		"/Users/waynejessen/djangoprojects/statesInTuple.py",
 		"/Users/waynejessen/djangoprojects/ICECREAM_SUBLIME/moogit/moogit/users/models.py",
@@ -484,17 +487,7 @@
 		"/Volumes/HDD/Dropbox/SmallBar/flickr_app_11-24-13",
 		"/Volumes/HDD/Google Drive/programming/flickr app/flickr-geo/flickr-app.py",
 		"/Volumes/HDD/Google Drive/programming/flickr app/flickr-geo/insert-into-postgres.py",
-		"/Volumes/HDD/Downloads/quick_csv_import-2006-08-23/Quick_CSV_import.php",
-		"/Volumes/HDD/Google Drive/programming/flickr app/flickr-geo/flickr-data-4.csv",
-		"/Volumes/HDD/Google Drive/programming/flickr app/flickr-geo/geo-data-practice.txt",
-		"/Volumes/HDD/Google Drive/programming/flickr app/flickr-geo/sample-data.txt",
-		"/Users/waynejessen/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Volumes/HDD/Google Drive/programming/flickr app/flickr-geo/first page of data",
-		"/Users/waynejessen/Desktop/This is the original Windows 7 Ultimate 32-bit:64-",
-		"/Users/waynejessen/Dropbox/programming/treehouse files/css files/Backgrounds/background-properties/start/page-styles.css",
-		"/Users/waynejessen/Dropbox/programming/treehouse files/css files/Backgrounds/background-properties/start/style.css",
-		"/Users/waynejessen/Dropbox/programming/bakin website/css/style.css",
-		"/Users/waynejessen/Desktop/To do tomorrow"
+		"/Volumes/HDD/Downloads/quick_csv_import-2006-08-23/Quick_CSV_import.php"
 	],
 	"find":
 	{
@@ -513,6 +506,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"model.",
 			"tr",
 			"th",
 			"thtr",
@@ -570,98 +564,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/users/models.py",
-					"settings":
-					{
-						"buffer_size": 350,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								240,
-								240
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/config/common.py",
-					"settings":
-					{
-						"buffer_size": 8901,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1277,
-								1282
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 684.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "models.py",
-					"settings":
-					{
-						"buffer_size": 895,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								894,
-								894
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
