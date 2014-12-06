@@ -38,7 +38,7 @@
 	    	<th>Age</th>
     	</tr>
     </thead>
-    <tr>
+<!--     <tr>
     	<td>Apples</td>
     	<td>Oranges</td>
     	<td>Triple Crown</td>
@@ -46,7 +46,23 @@
     	<td>08:30</td>
     	<td>Fruit</td>
     	<td>21+</td>
-    </tr>    
+    </tr>     -->
+
+<!-- Display the next 10 shows -->
+{% for show in shows %}
+<tr>
+	<td>TBD</td>
+	<td>{{show.band1}}</td>
+	<td>{{show.venue}}</td>
+	<td>{{show.Date}}</td>
+	<td>Show Time</td>
+	<td>Show Genre</td>
+	<td>Show age requirement</td>
+
+
+</tr>
+
+{% endfor %}
 
 
 

@@ -360,16 +360,17 @@
 	},
 	"file_history":
 	[
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/admin.py",
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/urls.py",
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/users/functions.py",
 		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/views.py",
 		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/models.py",
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/urls.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/urls.py",
 		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/templates/pages/home.html",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/users/models.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/manage.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/admin.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/users/functions.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/urls.py",
 		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/config/common.py",
 		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/migrations/urls.py",
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/users/models.py",
 		"/Users/waynejessen/Desktop/cookiecutter-django-1.6.6/README.rst",
 		"/Users/waynejessen/djangoprojects/statesInTuple.py",
 		"/Users/waynejessen/djangoprojects/ICECREAM_SUBLIME/moogit/moogit/users/models.py",
@@ -486,8 +487,7 @@
 		"/Volumes/HDD/Dropbox/SmallBar/smallboxes search.py",
 		"/Volumes/HDD/Dropbox/SmallBar/flickr_app_11-24-13",
 		"/Volumes/HDD/Google Drive/programming/flickr app/flickr-geo/flickr-app.py",
-		"/Volumes/HDD/Google Drive/programming/flickr app/flickr-geo/insert-into-postgres.py",
-		"/Volumes/HDD/Downloads/quick_csv_import-2006-08-23/Quick_CSV_import.php"
+		"/Volumes/HDD/Google Drive/programming/flickr app/flickr-geo/insert-into-postgres.py"
 	],
 	"find":
 	{

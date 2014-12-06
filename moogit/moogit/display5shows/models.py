@@ -59,26 +59,6 @@ class Band(models.Model):
        return unicode(self.bandName)  
 
 
-# class Show(models.Model):
-#     showID        = models.AutoField(primary_key = True)
-#     # showVenueID   = models.ForeignKey("Show")
-#     # venueName     = models.ForeignKey("Venue", default = "Apples")
-#     #TODO add sep. date and time fields
-#     Date          = models.DateTimeField()
-#     band1         = models.CharField(max_length = 150,
-#                                   default = "Band 1")
-#     band2         = models.CharField(max_length = 150,
-#                                     default = "Band 2")
-#     band3         = models.CharField(max_length = 150,
-#                                      default = "Band 3")
-#     band4         = models.CharField(max_length = 150,
-#                                     default = "Band 4")
-#     bandsExtra    = models.TextField()
-#     showDateAdded = models.DateTimeField( auto_now_add = True)
-#     showDateMod   = models.DateTimeField( auto_now = True )
-
-    def __unicode__(self):
-       return unicode(self.showID)  
 
 class Show2(models.Model):
     show2ID        = models.AutoField(primary_key = True)
@@ -87,8 +67,9 @@ class Show2(models.Model):
     Time           = models.TimeField()
     DateTimeAdded  = models.DateTimeField(auto_now_add = True)
     DateTimeMod    = models.DateTimeField(auto_now = True)
-    # bands          = models.ManyToManyField(Band)
+    bands          = models.ManyToManyField(Band, related_name = "bands" )
     bandExtraTesxt = models.TextField()
 
-
+    def __unicode__(self):
+       return unicode(self.showID)  
 
