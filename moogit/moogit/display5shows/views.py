@@ -23,7 +23,6 @@ def homePage(request):
 		showsByDate    = Show2.objects.all().order_by('Date')
 		next10Shows    = showsByDate[:10]
 
-
 		return render_to_response('pages/home.html',
 								{'shows' : next10Shows},
 								context_instance = RequestContext(request))

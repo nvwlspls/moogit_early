@@ -30,5 +30,5 @@ urlpatterns = patterns('',
 
     # Your stuff: custom urls go here
 
-     url(r'^$', include("display5shows.urls"), name = "home")
+     url(r'^$', include("displayHome.urls"), name = "home")
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

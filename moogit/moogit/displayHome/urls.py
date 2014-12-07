@@ -10,5 +10,5 @@ from django.conf.urls.static import static
 from django.views.generic import TemplateView
 
 urlpatterns = patterns('',
-    url(r'^$', 'display5shows.views.homePage', name = 'home'),
+    url(r'^$', 'displayHome.views.homePage', name = 'home'),
     )

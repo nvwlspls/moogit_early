@@ -48,7 +48,7 @@ class Common(Configuration):
     # Apps specific for this project go here.
     LOCAL_APPS = (
         'users',
-        'display5shows'  # custom users app
+        'displayHome'  # custom users app
         # Your stuff: custom apps go here
     )
 

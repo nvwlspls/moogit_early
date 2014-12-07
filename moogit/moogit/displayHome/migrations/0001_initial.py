@@ -33,8 +33,20 @@ class Migration(migrations.Migration):
                 ('DateTimeAdded', models.DateTimeField(auto_now_add=True)),
                 ('DateTimeMod', models.DateTimeField(auto_now=True)),
                 ('bandExtraTesxt', models.TextField()),
-                ('bands', models.ManyToManyField(related_name=b'bands', to='display5shows.Band')),
-                ('showVenueID', models.ForeignKey(to='display5shows.Band')),
+                ('age', models.IntegerField()),
+                ('cost', models.DecimalField(max_digits=5, decimal_places=2)),
+                ('bands', models.ManyToManyField(related_name=b'bands', to='displayHome.Band')),
+            ],
+            options={
+            },
+            bases=(models.Model,),
+        ),
+        migrations.CreateModel(
+            name='showOrder',
+            fields=[
+                ('showOrderID', models.AutoField(serialize=False, primary_key=True)),
+                ('order', models.IntegerField()),
+                ('bandID', models.ForeignKey(to='displayHome.Band')),
             ],
             options={
             },
@@ -59,5 +71,17 @@ class Migration(migrations.Migration):
             options={
             },
             bases=(models.Model,),
+        ),
+        migrations.AddField(
+            model_name='show2',
+            name='showOrderID',
+            field=models.ForeignKey(to='displayHome.showOrder'),
+            preserve_default=True,
+        ),
+        migrations.AddField(
+            model_name='show2',
+            name='showVenueID',
+            field=models.ForeignKey(to='displayHome.Venue'),
+            preserve_default=True,
         ),
     ]

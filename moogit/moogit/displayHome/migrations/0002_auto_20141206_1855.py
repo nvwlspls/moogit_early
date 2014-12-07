@@ -7,14 +7,18 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('display5shows', '0005_showorder'),
+        ('displayHome', '0001_initial'),
     ]
 
     operations = [
-        migrations.AddField(
+        migrations.RemoveField(
             model_name='show2',
             name='showOrderID',
-            field=models.ForeignKey(default=0, to='display5shows.showOrder'),
+        ),
+        migrations.AddField(
+            model_name='showorder',
+            name='showID',
+            field=models.ForeignKey(default=1, to='displayHome.Show2'),
             preserve_default=False,
         ),
     ]
