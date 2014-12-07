@@ -21,7 +21,8 @@ def homePage(request):
 		#show the shows
 		from models import Show2
 		showsByDate    = Show2.objects.all().order_by('Date')
-		next10Shows    = showsByDate[10:]
+		next10Shows    = showsByDate[:10]
+
 
 		return render_to_response('pages/home.html',
 								{'shows' : next10Shows},

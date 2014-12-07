@@ -29,13 +29,12 @@
   <table class="table">
   	<thead>
 		<tr>
-	    	<th>Show</th>
-	    	<th>Band</th>
+	    	<th>Bands</th>
 	    	<th>Venue</th>
 	    	<th>Date</th>
 	    	<th>Time</th>
-	    	<th>Genre</th>
 	    	<th>Age</th>
+	    	<th>Cost</th>
     	</tr>
     </thead>
 <!--     <tr>
@@ -51,14 +50,16 @@
 <!-- Display the next 10 shows -->
 {% for show in shows %}
 <tr>
-	<td>TBD</td>
-	<td>{{show.band1}}</td>
-	<td>{{show.venue}}</td>
+	<td>
+		{% for band in show.bands.all %}
+		{{band.bandName}}<br>
+		{% endfor %}
+	</td>
+	<td>{{show.showVenueID}}</td>
 	<td>{{show.Date}}</td>
-	<td>Show Time</td>
-	<td>Show Genre</td>
-	<td>Show age requirement</td>
-
+	<td>{{show.Time}}</td>
+	<td>{{show.age}}</td>
+	<td>{{show.cost}}</td>
 
 </tr>
 

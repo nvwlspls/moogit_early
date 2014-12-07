@@ -56,20 +56,29 @@ class Band(models.Model):
     # shows         = models.ManyToManyField(Show2)
     
     def __unicode__(self):
-       return unicode(self.bandName)  
-
-
+       return unicode(self.bandName) 
 
 class Show2(models.Model):
     show2ID        = models.AutoField(primary_key = True)
-    showVenueID    = models.ForeignKey("Band")
+    showVenueID    = models.ForeignKey("Venue")
+    showOrderID    = models.ForeignKey("showOrder")
     Date           = models.DateField()
     Time           = models.TimeField()
     DateTimeAdded  = models.DateTimeField(auto_now_add = True)
     DateTimeMod    = models.DateTimeField(auto_now = True)
     bands          = models.ManyToManyField(Band, related_name = "bands" )
     bandExtraTesxt = models.TextField()
+    age            = models.IntegerField()
+    cost           = models.DecimalField(max_digits = 5, decimal_places = 2)
 
     def __unicode__(self):
-       return unicode(self.showID)  
+       return unicode(self.show2ID)  
+
+class showOrder(models.Model):
+    showOrderID   = models.AutoField(primary_key = True)
+    bandID        = models.ForeignKey("Band")
+    order         = models.IntegerField()
+
+    def __unicode__(self):
+       return unicode(self.show2ID)  
 
