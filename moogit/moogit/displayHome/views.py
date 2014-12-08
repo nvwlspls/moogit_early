@@ -23,26 +23,10 @@ def homePage(request):
         showsByDate    = Show2.objects.all().order_by('Date')
         next10Shows    = showsByDate[:10]
 
-        # orders = []
-        # for show in next10Shows:
-        #     bands = show.bands.all()
-        #     for band in bands:
-        #         order    = showOrder.objects.filter(bandID = band.bandID,  
-        #                                             showID = show.show2ID)
-        #         if len(order) > 0:
-        #             orderNum = order[0].order
-        #         else:
-        #             orderNum = 0
-        #         templist = [band.bandID, show.show2ID, orderNum]
-        #         orders.append(templist)
-
-        orders = showOrder.objects.all()
-        
 
 
         return render_to_response('pages/home.html',
-                                {'shows' : next10Shows,
-                                 'orders' : orders},
+                                {'shows' : next10Shows},
                                 context_instance = RequestContext(request))
 
     if request.method == 'POST':

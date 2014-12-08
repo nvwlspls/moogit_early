@@ -59,10 +59,13 @@ class Band(models.Model):
        return unicode(self.bandName) 
 
 class showOrder(models.Model):
-    showOrderID   = models.AutoField(primary_key = True)
-    bandID        = models.ForeignKey("Band")
-    order         = models.IntegerField()
-    showID        = models.ForeignKey("Show2")
+    showOrderID    = models.AutoField(primary_key = True)
+    order          = models.IntegerField()
+    showID         = models.ForeignKey("Show2", related_name = 'showIDOrder')
+    bandID         = models.ForeignKey("Band", related_name = 'bandIDOrder')
+
+    class Meta:
+        ordering = ['order']
 
 
 class Show2(models.Model):
@@ -73,6 +76,7 @@ class Show2(models.Model):
     DateTimeAdded  = models.DateTimeField(auto_now_add = True)
     DateTimeMod    = models.DateTimeField(auto_now = True)
     bands          = models.ManyToManyField(Band, related_name = "bands" )
+    orders         = models.ManyToManyField(showOrder, related_name = 'orders')
     bandExtraTesxt = models.TextField()
     age            = models.IntegerField()
     cost           = models.DecimalField(max_digits = 5, decimal_places = 2)

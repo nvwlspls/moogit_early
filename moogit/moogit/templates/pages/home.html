@@ -51,10 +51,9 @@
 {% for show in shows %}
 <tr>
 	<td>
-		{% for order in orders.filter(order_by = 'order') %}
-			<br>
-		{% endfor %}
-
+	{% for order in show.showIDOrder.all %}
+			{{order.bandID.bandName}}<br>
+			{% endfor %}
 	</td>
 	<td>{{show.showVenueID}}</td>
 	<td>{{show.Date}}</td>
