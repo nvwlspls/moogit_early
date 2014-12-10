@@ -11,4 +11,5 @@ from django.views.generic import TemplateView
 
 urlpatterns = patterns('',
     url(r'^$', 'displayHome.views.homePage', name = 'home'),
+    url(r'^user/$', 'displayHome.views.modHome', name = 'modHome'),
     )

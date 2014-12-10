@@ -30,5 +30,6 @@ urlpatterns = patterns('',
 
     # Your stuff: custom urls go here
 
-     url(r'^$', include("displayHome.urls"), name = "home")
+     url(r'^$', include("displayHome.urls"), name = "home"),
+     url(r'^user/$', 'displayHome.views.modHome', name = 'modHome')
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

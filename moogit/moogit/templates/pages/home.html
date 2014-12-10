@@ -37,29 +37,15 @@
 	    	<th>Cost</th>
     	</tr>
     </thead>
-<!--     <tr>
-    	<td>Apples</td>
-    	<td>Oranges</td>
-    	<td>Triple Crown</td>
-    	<td>12-Oct-2014</td>
-    	<td>08:30</td>
-    	<td>Fruit</td>
-    	<td>21+</td>
-    </tr>     -->
-
-<!-- Display the next 10 shows -->
 {% for show in shows %}
 <tr>
 	<td>
-<!-- 	{% for order in show.showIDOrder.all %}
-			<p2>{{order.bandID.bandName}}</p2><br>
-			{% endfor %} -->
- Headliner is:<b> {{ show.showIDOrder.all.0.bandID.bandName }} </b><br>
- 	{{ show.showIDOrder.all.1.bandID.bandName }}<br>
- 	{{ show.showIDOrder.all.2.bandID.bandName}}
+ 		Headliner is:
+ 			<b> {{ show.showIDOrder.all.0.bandID.bandName }} </b><br>
+ 		{{ show.showIDOrder.all.1.bandID.bandName }}<br>
+ 		{{ show.showIDOrder.all.2.bandID.bandName}}
 
 
-<!-- 	<p3>{{show.showIDorder.all.2.bandID.bandName}}</p3><br> -->
 	</td>
 	<td>{{show.showVenueID}}</td>
 	<td>{{show.Date}}</td>
