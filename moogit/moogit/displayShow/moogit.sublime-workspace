@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"small",
+				"smallboxes"
+			],
+			[
+				"get",
+				"get_for_model"
+			],
+			[
+				"conten",
+				"content_type"
+			],
+			[
+				"http",
+				"HttpResponse"
+			],
+			[
+				"is",
+				"is_authenticated"
+			],
+			[
+				"if",
+				"if	If Condition"
+			],
+			[
+				"showOrd",
+				"showOrderID"
+			],
+			[
+				"max",
+				"max_digits"
+			],
+			[
+				"Aut",
+				"AutoField"
+			],
+			[
+				"ma",
+				"ManyToManyField"
+			],
+			[
+				"aut",
+				"auto_now"
+			],
+			[
+				"Date",
+				"DateTimeField"
+			],
+			[
+				"for",
+				"ForeignKey"
+			],
+			[
+				"show",
+				"showVenueID"
+			],
+			[
 				"venue",
 				"venueName"
 			],
@@ -14,10 +70,6 @@
 			[
 				"uni",
 				"uniqueDoseLevels"
-			],
-			[
-				"aut",
-				"auto_now_add"
 			],
 			[
 				"US",
@@ -92,10 +144,6 @@
 				"poll_id"
 			],
 			[
-				"get",
-				"get_object_or_404"
-			],
-			[
 				"p",
 				"poll"
 			],
@@ -138,10 +186,6 @@
 			[
 				"erro",
 				"error_message"
-			],
-			[
-				"for",
-				"foreach	foreach …"
 			],
 			[
 				"li",
@@ -360,16 +404,28 @@
 	},
 	"file_history":
 	[
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/views.py",
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/models.py",
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/urls.py",
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/templates/pages/home.html",
+		"/Users/waynejessen/geographyProject/GEOG_603_Project_Flickr/flickrApp.py",
+		"/Users/waynejessen/geographyProject/20141219Time2259flickrData.csv",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayHome/models.py",
 		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/users/models.py",
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/manage.py",
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/admin.py",
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/users/functions.py",
-		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/urls.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/urls.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayHome/urls.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/templates/pages/user.html",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayHome/views.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/userHome/views.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/templates/pages/home.html",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/display5shows/admin.py",
 		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/config/common.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/display5shows/models.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/moogitGENRES",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/display5shows/views.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/display5shows/urls.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/views.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/urls.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/models.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/admin.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/manage.py",
+		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/users/functions.py",
 		"/Users/waynejessen/djangoprojects/BEARS_SUBLIME/moogit/moogit/displayShow/migrations/urls.py",
 		"/Users/waynejessen/Desktop/cookiecutter-django-1.6.6/README.rst",
 		"/Users/waynejessen/djangoprojects/statesInTuple.py",
@@ -475,19 +531,7 @@
 		"/Volumes/HDD/Google Drive/programming/php/TTH first project/test.php",
 		"/Volumes/HDD/Downloads/shirts4mike/index.html",
 		"/Volumes/HDD/Google Drive/programming/php/TTH first project/php intro.php",
-		"/Volumes/HDD/Google Drive/programming/javascript/Teamtreehouse/beginning JS",
-		"/Volumes/HDD/Google Drive/Ghost Blog/Post #4 CS concepts",
-		"/Volumes/HDD/Google Drive/Ghost Blog/Rdata types.mdown",
-		"/Volumes/HDD/Google Drive/Ghost Blog/Post #3 CS resources.mdown",
-		"/Volumes/HDD/Google Drive/programming/flickr_app_repos/GEOG_603_Project_Flickr/flickr-data-11",
-		"/Volumes/HDD/Google Drive/programming/flickr_app_repos/SmallBar/smallboxes search.py",
-		"/Volumes/HDD/Dropbox/SmallBar/flickr_app_11-24-13.py",
-		"/Volumes/HDD/Dropbox/SmallBar/flickr_app_11-27-13.py",
-		"/Users/waynejessen/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
-		"/Volumes/HDD/Dropbox/SmallBar/smallboxes search.py",
-		"/Volumes/HDD/Dropbox/SmallBar/flickr_app_11-24-13",
-		"/Volumes/HDD/Google Drive/programming/flickr app/flickr-geo/flickr-app.py",
-		"/Volumes/HDD/Google Drive/programming/flickr app/flickr-geo/insert-into-postgres.py"
+		"/Volumes/HDD/Google Drive/programming/javascript/Teamtreehouse/beginning JS"
 	],
 	"find":
 	{
@@ -503,9 +547,12 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"\n ",
+			"HttpResponse",
+			"venue",
 			"model.",
 			"tr",
 			"th",

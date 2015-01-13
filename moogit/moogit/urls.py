@@ -10,6 +10,10 @@ from django.views.generic import TemplateView
 from django.contrib import admin
 admin.autodiscover()
 
+#Import CBVs
+from displayHome.views import homePage
+
+
 urlpatterns = patterns('',
     # url(r'^$',  # noqa
     #     TemplateView.as_view(template_name='pages/home.html'),
@@ -30,6 +34,6 @@ urlpatterns = patterns('',
 
     # Your stuff: custom urls go here
 
-     url(r'^$', include("displayHome.urls"), name = "home"),
+     url(r'^$', homePage.as_view(), name = "home"),
      url(r'^user/$', 'displayHome.views.modHome', name = 'modHome')
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
